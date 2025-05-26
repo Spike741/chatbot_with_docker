@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/Spike741/chatbot.git'
+                git branch: 'master', url: 'https://github.com/Spike741/chatbot_with_docker.git'
             }
         }
 
