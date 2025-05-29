@@ -96,4 +96,6 @@ pipeline {
         echo 'Pipeline failed! Second pipeline will NOT run.'
     }
 }
+}    
+    
 
