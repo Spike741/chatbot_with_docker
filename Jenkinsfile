@@ -88,12 +88,12 @@ pipeline {
     }
 
     post {
-        success {
-            echo 'Pipeline completed successfully! Docker image pushed to ECR.'
-            echo "Created Docker image ID: ${env.IMAGE_ID}"
-        }
-        failure {
-            echo 'Pipeline failed! Check the logs for errors.'
-        }
+    success {
+        echo 'Pipeline completed successfully! Triggering second pipeline now.'
+        build job: 'docker_2', wait: false
+    }
+    failure {
+        echo 'Pipeline failed! Second pipeline will NOT run.'
     }
 }
+
