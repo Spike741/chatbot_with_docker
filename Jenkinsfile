@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'Built-In Node'}
+    agent {label 'windows-agent'}
 
     environment {
         AWS_REGION       = 'ap-south-1'
