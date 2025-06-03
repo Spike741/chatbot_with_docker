@@ -17,8 +17,8 @@ def groq_chat(context, question, model="llama3-8b-8192"):
             model=model,
             messages=[
                 {"role": "system", "content": "You are a helpful assistant. Answer questions based only on the provided context."},
-                {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {question}"}
-
+                {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {question}"},
+                #{"role": "assistant", "content": "You are a helpful assistant. Answer questions based only on the legal context also."},
             ],
             temperature=0.2,
             top_p=1,
