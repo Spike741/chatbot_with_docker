@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from groq import Groq
 
 load_dotenv()
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "ZravWjmNMhcjlhHn0SfaWGdyb3FYlZdAVFXB0GNm4Wb3ZiX9m2N0"
 
 app = FastAPI()
 
